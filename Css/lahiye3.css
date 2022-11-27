@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background: #F5F5F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mezenne{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    border: 1px solid #E5E5E5;
+    border: none;
+    border-radius: 3px;
+    width: 259px;
+    height: 102px;
+}
+
+.ul-mezenne1,.ul-mezenne2{
+    margin: 10px 0px;
+}
+.li-mezenne1{
+    background-color: aqua;
+}
+.li-mezenne2{
+    background-color: aqua;
+}
+/* salam */
