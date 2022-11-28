@@ -14,7 +14,19 @@ base=document.querySelector('.ul-mezenne1 li').innerText
 console.log(base.innerText);
 rate=document.querySelector('.ul-mezenne2 li:nth-child(2)');
 rate.classList.add('li-mezenne2')
-rate=document.querySelector('.ul-mezenne2 li').innerText
+rate=document.querySelector('.ul-mezenne2 li:nth-child(2)').innerText;
+console.log(rate);
+fetch(`https://api.exchangerate.host/latest?base=RUB&symbols=USD`).then(res=>res.json()).then(data=>{
+    p1.innerText=(`1 ${data.base} = ${data.rates.USD} ${rate}`);
+}
+)
+fetch(`https://api.exchangerate.host/latest?base=USD&symbols=RUB`).then(res=>res.json()).then(data=>{
+    console.log(data);
+    p2.innerText=(`1 ${data.base} = ${data.rates.RUB} ${base}`);
+}
+)
+
+
 const btn1 = document.querySelectorAll('.ul-mezenne1 li');
 btn1.forEach(item1=> {
     item1.addEventListener('click', (event) => {
